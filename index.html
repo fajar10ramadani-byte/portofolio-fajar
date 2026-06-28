@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fajar Ramadhani | Digital Innovator</title>
+    <!-- SEO & Link Preview Meta Tags -->
+    <meta name="description" content="Portofolio resmi Fajar Ramadhani. Membangun ekosistem digital yang modern melalui integrasi Artificial Intelligence dan teknologi web masa kini.">
+    <meta property="og:title" content="Fajar Ramadhani | Digital Innovator">
+    <meta property="og:description" content="Lihat portofolio, project AI, dan inovasi digital terbaru dari Fajar Ramadhani.">
+    <meta property="og:image" content="./images/foto.png">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: {
+                            bg: '#FAF8F5',       
+                            card: '#FFFFFF',     
+                            border: '#E8E1D5',   
+                            accent: '#A58763',   
+                            dark: '#2D2D2D',     
+                            muted: '#736B5E',    
+                            light: '#D6C8AD'     
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .cursor-blink { animation: blink 1s step-end infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    </style>
+</head>
+<body class="bg-cream-bg text-cream-dark font-sans antialiased selection:bg-cream-accent selection:text-white relative overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 w-full border-b border-cream-border bg-cream-bg/80 backdrop-blur-md z-50 transition-all">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-cream-dark font-extrabold text-xl tracking-tighter flex items-center gap-2">
+                <i class="ph-fill ph-code-block text-cream-accent"></i>
+                Portfolio<span class="text-cream-accent">.</span>
+            </div>
+            <nav class="hidden md:flex gap-8 text-sm font-semibold text-cream-muted">
+                <a href="#about" class="hover:text-cream-dark transition-colors">Tentang Saya</a>
+                <a href="#projects" class="hover:text-cream-dark transition-colors">Project</a>
+                <a href="#contact" class="hover:text-cream-dark transition-colors">Kontak</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:block px-6 py-2.5 rounded-full bg-cream-dark text-white font-semibold text-sm hover:bg-black transition-colors shadow-lg shadow-cream-dark/10">
+                    Let's Talk
+                </a>
+                <!-- Hamburger Button (Mobile Only) -->
+                <button id="mobile-menu-btn" class="md:hidden text-cream-dark p-2 focus:outline-none">
+                    <i id="mobile-menu-icon" class="ph-bold ph-list text-3xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="fixed top-20 left-0 w-full bg-cream-bg/95 backdrop-blur-md border-b border-cream-border z-40 opacity-0 invisible transition-all duration-300 transform -translate-y-4">
+        <nav class="flex flex-col p-6 gap-6 text-center font-bold text-cream-dark">
+            <a href="#about" class="mobile-link text-lg hover:text-cream-accent">Tentang Saya</a>
+            <a href="#projects" class="mobile-link text-lg hover:text-cream-accent">Project</a>
+            <a href="#contact" class="mobile-link text-lg hover:text-cream-accent">Kontak</a>
+            <a href="#contact" class="mobile-link mt-4 px-8 py-3 mx-auto rounded-full bg-cream-dark text-white font-semibold text-sm w-max shadow-lg">Let's Talk</a>
+        </nav>
+    </div>
+
+    <main class="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-24">
+        
+        <!-- HERO SECTION (DownloadHub Style) -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] opacity-20 pointer-events-none -z-10">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#D6C8AD] to-[#8F724F] blur-[100px] rounded-full mix-blend-multiply"></div>
+        </div>
+        
+        <section class="py-20 md:py-32 flex flex-col items-center text-center relative z-10">
+            
+            <!-- Badge -->
+            <div data-aos="fade-down" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-cream-border text-cream-accent text-xs font-bold uppercase tracking-widest mb-8 shadow-sm">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cream-accent opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-cream-accent"></span>
+                </span>
+                Available for Work
+            </div>
+
+            <!-- Avatar Profil -->
+            <div data-aos="zoom-in" data-aos-duration="1000" class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mb-8 border-4 border-white shadow-xl shadow-cream-accent/20 mx-auto relative z-20">
+                <img src="./images/foto.png" alt="Foto Profil Fajar Ramadhani" class="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+            
+            <!-- Headline Massive -->
+            <h1 data-aos="fade-up" data-aos-duration="1000" class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter mb-6 max-w-4xl mx-auto px-4 text-cream-dark">
+                Halo, Saya seorang <br class="hidden md:block"/><span class="bg-clip-text text-transparent bg-gradient-to-r from-cream-dark to-[#8F724F]">Digital Innovator.</span>
+            </h1>
+            
+            <!-- Typewriter -->
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="text-lg md:text-xl text-cream-muted max-w-2xl font-medium leading-relaxed mb-10 px-6 h-20 md:h-16">
+                <span id="typewriter"></span><span class="cursor-blink text-cream-accent font-bold">|</span>
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full px-6">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-4 bg-cream-dark hover:bg-black text-white rounded-xl font-bold flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(45,45,45,0.2)]">
+                    Lihat Project <i class="ph-bold ph-arrow-right"></i>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white border border-cream-border hover:bg-cream-light text-cream-dark rounded-xl font-bold flex items-center justify-center gap-2 transition-all hover:scale-105 active:scale-95 shadow-sm">
+                    <i class="ph-bold ph-envelope-simple"></i> Hubungi Saya
+                </a>
+            </div>
+
+        </section>
+
+        <!-- SERVICES & SKILLS SECTION -->
+        <section id="about" class="py-20 border-t border-cream-border">
+            <div data-aos="fade-down-right" data-aos-duration="800" class="mb-12">
+                <h2 class="text-3xl font-bold text-cream-dark mb-4">Fokus & Keahlian Utama</h2>
+                <p class="text-cream-muted font-medium">Peran profesional yang saya jalankan dalam industri digital.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <!-- Role 1 -->
+                <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="100" class="p-8 rounded-[2rem] bg-white border border-cream-border shadow-sm hover:shadow-xl hover:border-cream-accent/30 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cream-bg flex items-center justify-center mb-6 group-hover:bg-cream-accent group-hover:text-white transition-colors">
+                        <i class="ph-fill ph-cpu text-3xl text-cream-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-cream-dark mb-2">AI Strategist</h3>
+                    <p class="text-cream-muted leading-relaxed text-sm font-medium">Fokus pada implementasi dan otomasi proses menggunakan Artificial Intelligence untuk meningkatkan efisiensi sistem.</p>
+                </div>
+                
+                <!-- Role 2 -->
+                <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="300" class="p-8 rounded-[2rem] bg-white border border-cream-border shadow-sm hover:shadow-xl hover:border-cream-accent/30 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cream-bg flex items-center justify-center mb-6 group-hover:bg-cream-accent group-hover:text-white transition-colors">
+                        <i class="ph-fill ph-code-block text-3xl text-cream-accent group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-cream-dark mb-2">Web Engineer</h3>
+                    <p class="text-cream-muted leading-relaxed text-sm font-medium">Membangun arsitektur website modern dengan performa tinggi, responsif, dan memberikan user experience terbaik.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+                <div data-aos="zoom-in" data-aos-delay="100" class="px-5 py-2.5 rounded-full bg-white border border-cream-border text-sm font-bold flex items-center gap-2 text-cream-dark shadow-sm hover:border-cream-accent transition-colors cursor-default">
+                    <i class="ph-fill ph-robot text-cream-accent"></i> AI Automation
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="200" class="px-5 py-2.5 rounded-full bg-white border border-cream-border text-sm font-bold flex items-center gap-2 text-cream-dark shadow-sm hover:border-cream-accent transition-colors cursor-default">
+                    <i class="ph-fill ph-share-network text-cream-accent"></i> Digital Strategy
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="300" class="px-5 py-2.5 rounded-full bg-white border border-cream-border text-sm font-bold flex items-center gap-2 text-cream-dark shadow-sm hover:border-cream-accent transition-colors cursor-default">
+                    <i class="ph-fill ph-browsers text-cream-accent"></i> Web Development
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="400" class="px-5 py-2.5 rounded-full bg-white border border-cream-border text-sm font-bold flex items-center gap-2 text-cream-dark shadow-sm hover:border-cream-accent transition-colors cursor-default">
+                    <i class="ph-fill ph-magic-wand text-cream-accent"></i> Prompt Engineering
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="py-20 border-t border-cream-border">
+            <div data-aos="fade-up" data-aos-duration="800" class="mb-12">
+                <h2 class="text-3xl font-bold text-cream-dark mb-4">Featured Projects</h2>
+                <p class="text-cream-muted font-medium">Beberapa karya dan kontribusi terbaik saya.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <a href="https://sssvideodownloader.my.id" target="_blank" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100" class="group flex flex-col p-6 rounded-[2rem] bg-white border border-cream-border shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-full aspect-video rounded-xl bg-cream-bg border border-cream-border flex items-center justify-center mb-6 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('./images/downloadhub.jpg');"></div>
+                        <div class="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-500"></div>
+                        <i class="ph-fill ph-browser text-6xl text-white group-hover:text-cream-accent group-hover:scale-110 transition-all duration-500 relative z-10"></i>
+                    </div>
+                    <span class="text-xs font-bold text-cream-accent tracking-widest uppercase mb-2">Web App</span>
+                    <h3 class="text-xl font-extrabold text-cream-dark mb-2">SSS Video Downloader</h3>
+                    <p class="text-cream-muted text-sm mb-6 flex-grow font-medium">Platform pengunduh video instan dengan performa tinggi.</p>
+                    <div class="flex items-center gap-2 text-sm font-bold text-cream-dark group-hover:text-cream-accent transition-colors">
+                        Visit Site <i class="ph-bold ph-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- Project 2 (Kultur AI) -->
+                <a href="https://www.instagram.com/kultur.ai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300" class="group flex flex-col p-6 rounded-[2rem] bg-white border border-cream-border shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-full aspect-video rounded-xl bg-[#8c1c13] border border-cream-border flex items-center justify-center mb-6 overflow-hidden relative">
+                        <img src="./images/kultur.png" class="absolute w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kultur AI Background">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500"></div>
+                        <i class="ph-fill ph-instagram-logo text-6xl text-white group-hover:text-cream-accent group-hover:scale-110 transition-all duration-500 relative z-10 drop-shadow-lg"></i>
+                    </div>
+                    <span class="text-xs font-bold text-cream-accent tracking-widest uppercase mb-2">Content Strategy</span>
+                    <h3 class="text-xl font-extrabold text-cream-dark mb-2">Kultur AI (Official)</h3>
+                    <p class="text-cream-muted text-sm mb-6 flex-grow font-medium">Mengelola produksi konten dan strategi media sosial untuk akun resmi Kultur AI.</p>
+                    <div class="flex items-center gap-2 text-sm font-bold text-cream-dark group-hover:text-cream-accent transition-colors">
+                        Tonton Konten <i class="ph-bold ph-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://drive.google.com/drive/folders/1cXMeJnaa-OPbZ4ZTPIyKUhlm-8hGDEYN?usp=sharing" target="_blank" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500" class="group flex flex-col p-6 rounded-[2rem] bg-white border border-cream-border shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-full aspect-video rounded-xl bg-cream-bg border border-cream-border flex items-center justify-center mb-6 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('./images/drive.png');"></div>
+                        <div class="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-500"></div>
+                        <i class="ph-fill ph-google-drive-logo text-6xl text-white group-hover:text-cream-accent group-hover:scale-110 transition-all duration-500 relative z-10"></i>
+                    </div>
+                    <span class="text-xs font-bold text-cream-accent tracking-widest uppercase mb-2">Google Drive</span>
+                    <h3 class="text-xl font-extrabold text-cream-dark mb-2">Project AI</h3>
+                    <p class="text-cream-muted text-sm mb-6 flex-grow font-medium">Dokumentasi & arsitektur implementasi sistem berbasis AI tingkat lanjut.</p>
+                    <div class="flex items-center gap-2 text-sm font-bold text-cream-dark group-hover:text-cream-accent transition-colors">
+                        Buka Drive <i class="ph-bold ph-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 border-t border-cream-border flex flex-col items-center text-center">
+            <h2 data-aos="zoom-in-up" data-aos-duration="1000" class="text-3xl md:text-5xl font-extrabold text-cream-dark mb-6">Tertarik Berkolaborasi?</h2>
+            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" class="text-cream-muted max-w-xl mb-10 font-medium">Jika Anda memiliki ide menarik seputar pengembangan AI atau Web Development, jangan ragu untuk berdiskusi dengan saya.</p>
+            
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="800" class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="https://wa.me/6289677487974" target="_blank" class="px-8 py-4 rounded-xl bg-[#25D366] text-white font-bold flex items-center justify-center gap-3 hover:bg-[#1DA851] transition-all shadow-lg shadow-[#25D366]/20 hover:-translate-y-1">
+                    <i class="ph-fill ph-whatsapp-logo text-2xl"></i> 
+                    Chat via WhatsApp
+                </a>
+                <a href="mailto:fajar10ramadani@gmail.com" class="px-8 py-4 rounded-xl bg-white border border-cream-border text-cream-dark font-bold flex items-center justify-center gap-3 hover:bg-cream-bg transition-all shadow-sm hover:-translate-y-1">
+                    <i class="ph-fill ph-envelope-simple text-2xl text-cream-accent"></i> 
+                    Kirim Email
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-cream-border py-8 text-center text-cream-muted text-sm font-medium">
+        <p>&copy; 2026 Premium Digital Creator. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false, 
+            offset: 120, 
+            easing: 'ease-out-cubic' 
+        });
+
+        const textToType = "Membangun ekosistem digital yang modern melalui integrasi Artificial Intelligence dan teknologi web masa kini.";
+        let index = 0;
+        const speed = 40; 
+
+        function typeWriter() {
+            if (index < textToType.length) {
+                document.getElementById("typewriter").innerHTML += textToType.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        setTimeout(typeWriter, 1000);
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMobileMenu() {
+            const isMenuOpen = !mobileMenu.classList.contains('opacity-0');
+            if (isMenuOpen) {
+                // Close menu
+                mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-4');
+                mobileMenuIcon.classList.replace('ph-x', 'ph-list');
+            } else {
+                // Open menu
+                mobileMenu.classList.remove('opacity-0', 'invisible', '-translate-y-4');
+                mobileMenuIcon.classList.replace('ph-list', 'ph-x');
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        // Close mobile menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
+        });
+    </script>
+</body>
+</html>
