@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id" class="scroll-smooth overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Fajar Ramadhani | Digital Innovator</title>
     <!-- SEO & Link Preview Meta Tags -->
     <meta name="description" content="Portofolio resmi Fajar Ramadhani. Membangun ekosistem digital yang modern melalui integrasi Artificial Intelligence dan teknologi web masa kini.">
@@ -299,6 +299,17 @@
         // Close mobile menu when a link is clicked
         mobileLinks.forEach(link => {
             link.addEventListener('click', toggleMobileMenu);
+        });
+
+        // Close mobile menu when clicking outside of it
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = mobileMenu.contains(event.target);
+            const isClickOnBtn = mobileMenuBtn.contains(event.target);
+            const isMenuOpen = !mobileMenu.classList.contains('opacity-0');
+            
+            if (isMenuOpen && !isClickInsideMenu && !isClickOnBtn) {
+                toggleMobileMenu();
+            }
         });
     </script>
 </body>
